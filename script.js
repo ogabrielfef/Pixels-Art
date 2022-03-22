@@ -1,10 +1,8 @@
-
 function pixelBoard(){
     let cont = document.getElementById("pixel-board");
     cont.style.display = "block";
     cont.style.width = "210px";
     cont.style.height = "210px";
-
     for ( let i = 0; i < 25; i++){
        let quadro = document.createElement("div");
         quadro.style.marginBottom = '-5px'
@@ -18,3 +16,4 @@ function pixelBoard(){
    }
 }
 pixelBoard();
+

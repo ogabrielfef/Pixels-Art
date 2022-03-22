@@ -1,12 +1,9 @@
-/*reset de config*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
-/*paleta de cores*/
 
 #color-palette {
     display: flex;
@@ -34,10 +31,7 @@
     background-color: green;
 }
 
-/*grade de pixel*/
-
 #pixel-board {
     margin-top: 10px;
-    padding: 0;
-    
+
 }
