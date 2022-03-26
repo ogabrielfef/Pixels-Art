@@ -17,3 +17,21 @@ function pixelBoard(){
 }
 pixelBoard();
 
+let corInicial = document.querySelectorAll('.color')[0];
+corInicial.classList.add('selected');
+
+function selecionaCor() {
+   let cores = document.querySelectorAll('.color');
+   for( let i = 0; i < cores.length; i++) {
+      cores[i].addEventListener('click', function newSelect(event) {
+   let corEscolhida = event.target;
+   let selecionada = document.querySelectorAll('.selected')[0];
+   selecionada.className = 'color'; 
+   corEscolhida.classList.add('selected');
+}); 
+   }
+} selecionaCor();
+
+
+
+
