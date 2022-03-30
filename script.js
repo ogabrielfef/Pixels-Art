@@ -32,6 +32,16 @@ function selecionaCor() {
    }
 } selecionaCor();
 
+function coloreQuadros() {
+   let quadros = document.getElementsByClassName('pixel');
+   for (i = 0; i < quadros.length; i += 1) {
+       quadros[i].addEventListener('click', function (event) {
 
-
-
+           let clickedColor = document.querySelector('.selected');
+           let css = window.getComputedStyle(clickedColor, null);
+           let newColor = css.getPropertyValue('background-Color');
+           console.log(clickedColor);
+           event.target.style.backgroundColor = newColor;
+       });
+   }
+} coloreQuadros();
