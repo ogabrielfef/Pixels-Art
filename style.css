@@ -1,37 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/bg-large.jpg) no-repeat top center/cover;
+  color: white;
+  font-family: sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  border-radius: 15px;
+  padding: 80px 80px 0 80px;
+  background-color: rgba(59, 27, 71, 0.2);
+}
+
+#title {
+  text-shadow: 2px 1px;
 }
 
 #color-palette {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding: 16px;
 }
+
+button {
+  width: 80px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 2px 1px black;
+  font-weight: 700;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
 .color {
-    border: solid black 1px;
-    width: 50px;
-    height: 50px;
+  border: solid black 1px;
+  width: 50px;
+  height: 50px;
 }
 
 #black {
-    background-color: black;
+  background-color: black;
 }
 
 #red {
-    background-color: red;
+  background-color: red;
 }
 
 #blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 #grenn {
-    background-color: green;
+  background-color: green;
 }
 
 #pixel-board {
-    margin-top: 10px;
+  margin-top: 10px;
 
 }
